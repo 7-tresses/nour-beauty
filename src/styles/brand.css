@@ -1,0 +1,71 @@
+:root{
+  --brand-terre: #C76B4C;
+  --brand-accent: #D57F30;
+  --brand-olive: #5E7A4D;
+  --brand-gold: #D4B08C;
+  --bg-cream: #F9F5F0;
+  --brand-dark: #24324A;
+  --text-color: #222222;
+  --radius: 8px;
+}
+
+/* Import Google Fonts (place the <link> in <head> or via build):
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@400;600&family=Tajawal:wght@400;700&display=swap" rel="stylesheet"> */
+
+body.body--brand {
+  background-color: var(--bg-cream);
+  color: var(--text-color);
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+h1,h2,h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--brand-dark);
+  margin: 0 0 0.6rem 0;
+}
+
+.rtl {
+  direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+  font-family: "Tajawal", "Noto Kufi Arabic", sans-serif;
+}
+
+.btn--primary{
+  background: var(--brand-terre);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  border: none;
+}
+.btn--secondary{
+  background: var(--brand-accent);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.9rem;
+  border: none;
+}
+
+.site-logo img{
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.pattern-frame {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-contrast {
+  color: var(--brand-dark);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
